@@ -7,38 +7,27 @@
 body {
   color: #283959;
   background-color: #f8fbff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header {
-  padding: 20px 35px;
   background-color: var(--tertiary-color);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-position: 80%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-}
-header div {
-  background-color: none;
-}
-header h1 {
-  font-weight: bold;
-  font-size: 36px;
-  color: var(--quaternary-color);
-  margin: 0;
-}
-header nav {
-  margin: 7px 0;
+  height: 400px;
+  text-align: center;
+  padding: 40px;
 }
 header a {
   color: var(--quaternary-color);
   text-decoration: none;
+}
+header .logo a {
+  background-image: url(images/andrewtowerslogo.PNG);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 150px;
+  position: relative;
+  top: -50px;
+  width: 300px;
 }
 header li {
   font-size: 24px;
@@ -49,14 +38,14 @@ header li {
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: none;
   list-style: none;
 }
 header nav ul li a {
-  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 header nav ul li a:hover {
   color: var(--quaternary-color);
@@ -64,30 +53,11 @@ header nav ul li a:hover {
   color: var();
   border-radius: 5px;
 }
-.hero {
-  background-color: var(--quaternary-color);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  justify-content: center;
-  align-items: flex-start;
-  height: 300px;
-  border: 1px solid red;
-}
-.hero div {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  top: 150px;
-  background-color: #fcc954;
-  padding: 10px;
-  border: 1px solid var(--secondary-color);
-}
 .main-content {
   padding: 5px;
 }
 .bio {
-  margin: 20px 150px;
+  margin: 20px 0 20px 150px;
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -100,7 +70,7 @@ header nav ul li a:hover {
 .portfolio {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  margin-left: 150px;
+  margin: 20px 0 20px 150px;
 }
 .section-title {
   border-right: 3px solid var(--tertiary-color);
@@ -112,28 +82,29 @@ header nav ul li a:hover {
 .content {
   padding: 10px;
   margin: 5px;
-}
-.best-work {
-  border: 1px solid var(--tertiary-color);
-  height: 300px;
-  width: 100%;
-  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .show-work {
-  display: grid;
   padding: 5px;
-  border: 1px solid var(--tertiary-color);
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
-.work-cards {
-  height: 150px;
-  width: 100%;
-  border: 1px solid var(--tertiary-color);
-}
-img {
-  max-width: 100%;
-  max-height: 100%;
+.show-work article {
   margin: auto;
+  width: 400px;
+  text-align: center;
+}
+.show-work article img {
+  width: 300px;
+  border-radius: 5%;
+  border-radius: 5%;
+  box-shadow: gray 0 0 10px;
+  opacity: 100;
+}
+.show-work article img:hover {
+  opacity: 0.8;
+  transition: 0.25s ease-in-out;
+  webkit-trasition: 0.25s ease-in-out;
 }
 .contact {
   display: flex;

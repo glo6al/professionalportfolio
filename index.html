@@ -11,9 +11,6 @@
 
   <body>
     <header>
-      <div>
-        <h1 href="/index.html">Andrew Towers</h1>
-      </div>
       <nav>
         <ul>
           <li>
@@ -21,6 +18,9 @@
           </li>
           <li>
             <a href="#work">Work</a>
+          </li>
+          <li class="logo">
+            <a href="index.html" alt="Andrew Towers Logo"></a>
           </li>
           <li>
             <a href="#contact-me">Contact Me</a>
@@ -31,14 +31,6 @@
         </ul>
       </nav>
     </header>
-
-    <!--This starts the hero section-->
-
-    <section class="hero">
-      <div>
-        <h2>Poke Around!</h2>
-      </div>
-    </section>
 
     <main class="main-content">
       <section id="about-me" class="bio">
@@ -65,51 +57,35 @@
 
         <!--Best Work here-->
         <div class="content">
-          <article class="best-work">
-            <h3 class="sub-title">GORX Fitness</h3>
-            <p>MERN Stack</p>
-            <div class="landscape">
-              <img src="/assets/images/gorxlogo.JPG" alt="gorx fitness logo"></img>
-            </div>
-
-          </article>
-
-          <!--Programs App Container starts here-->
           <div class="show-work">
+            <article class="work-cards">
+              <h3 class="sub-title">GORX Fitness</h3>
+              <p>MERN Stack</p>
+              <div class="landscape">
+                <a href="https://gorxfitness.com">
+                  <img src="/assets/images/gorxlogo.png" alt="gorx fitness logo"></img>
+                </a>
+              </div>
+            </article>
+
+            <!--Programs App Container starts here-->
             <article class="work-cards" id="rxly">
               <h3 class="sub-title">Rxly</h3>
               <p>NODE/IoT</p>
               <div class="landscape">
-                <img src="/assets/images/programs.JPG" alt="rxly logo"></img>
+                <img src="/assets/images/rxly.png" alt="rxly logo"></img>
               </div>
             </article>
 
-            <!--Peak Microgym Container starts here-->
+              <!--Peak Microgym Container starts here-->
 
             <article class="work-cards" id="peakmicrogym">
               <h3 class="sub-title">Peak Microgym</h3>
               <p>React/JavaScript/CSS</p>
               <div class="landscape">
-                <img src="/assets/images/peakmicrogym.JPG" alt="peak microgym logo"></img>
-              </div>
-            </article>
-            <!--Pastel Puzzels Here-->
-
-            <article class="work-cards" id="pastelpuzzels">
-              <h3 class="sub-title">Pastel Puzzels</h3>
-              <p>MERN Stack</p>
-              <div class="landscape">
-                <img src="/assets/images/gorxlogo.JPG" alt="picture of a pretzel"></img>
-              </div>
-            </article>
-
-            <!--Run Buddy here-->
-
-            <article class="work-cards" id="runbuddy">
-              <h3 class="sub-title">Run Buddy</h3>
-              <p>HTML/CSS</p>
-              <div class="landscape">
-                <img src="/assets/images/gorxlogo.JPG" alt="picture of a person working out"></img>
+                <a href="https://peakmicrogym.com">
+                  <img src="/assets/images/peakmicrogym.png" alt="peak microgym logo"></img>
+                </a>
               </div>
             </article>
           </div>
