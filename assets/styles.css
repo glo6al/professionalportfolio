@@ -139,3 +139,58 @@ header nav ul li a:hover {
 .contact ul a:hover {
   font-weight: bold;
 }
+/* Media query for screens */
+@media (max-width:1500px) {
+  .show-work {
+    display: flex;
+    flex-direction: row;
+    flex:  1fr 1fr;
+  }
+  .contact ul a {
+    display: inline-block;
+  }
+@media screen and (max-width: 1358px) {
+  .show-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .show-work article {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+  }
+  .show-work article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 1215px) {
+  .show-work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .show-work article {
+    display: block;
+  }
+  .show-work article img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media (max-width: 980px) {
+  .about-me div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+    /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+}
