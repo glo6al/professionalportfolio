@@ -190,7 +190,64 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  @media (max-width: 703px) {
+    header {
+      justify-content: space-around;
+    }
+    header nav ul {
+      display:flex;
+      flex-wrap: wrap;
+    }
+    header nav ul li a {
+      font-size: large;
+      position: absolute;
+    }
+    header .nav-link {
+      position: relative;
+      top: 75px;
+    }
+    header .logo {
+      position: absolute;
+    }
+
+    .about-me {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .section-title {
+      border: none;
+      text-align: center;
+      padding-bottom: 40px;
+      justify-content: space-around;
+      width: auto;
+    }
+    .portfolio {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .contact {
+      display: inline-block;
+      position: absolute;
+    }
+    footer h2 {
+      position: relative;
+      left: 130px;
+    }
+    .contact ul {
+      text-align: center;
+    }
+  }
 
     /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+  header {
+    display: grid;
+  }
+  header nav {
+    display: flex;
+  }
 }
