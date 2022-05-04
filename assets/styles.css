@@ -268,9 +268,9 @@ header nav ul li a:hover {
     height: 100%;
     margin: 20px 0;
   }
-}
-@media (max-width: 409px) {
-  header .logo a {
-    right: 0;
+  @media (max-width: 409px) {
+    header .logo a {
+      right: 0;
+    }
   }
 }
