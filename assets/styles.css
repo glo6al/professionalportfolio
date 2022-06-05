@@ -19,6 +19,7 @@ header a {
   color: var(--quaternary-color);
   text-decoration: none;
 }
+/* add logo to center of navbar */
 header .logo a {
   background-image: url(images/andrewtowerslogo.PNG);
   background-size: 300px;
@@ -69,6 +70,7 @@ header nav ul li a:hover {
 .bio {
   align-items: center;
 }
+/* make portfolio image look round and place to left of <p>*/
 .bio img {
   width: 200px;
   border: 2px solid var(--quaternary-color);
@@ -106,6 +108,8 @@ header nav ul li a:hover {
   text-align: center;
   display: inline-block;
 }
+
+/* make equal size and in row with title and subtitle above img */
 .show-work article img {
   width: 300px;
   border: 2px solid var(--quaternary-color);
@@ -119,6 +123,7 @@ header nav ul li a:hover {
   opacity: 0.8;
   transition: 0.25s ease-in-out;
 }
+/* keep same background color and align with other elements in body */
 .contact {
   display: flex;
   flex-wrap: wrap;
